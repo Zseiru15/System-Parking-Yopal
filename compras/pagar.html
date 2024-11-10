@@ -1,65 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Contact Information</title>
-    <script src="https://unpkg.com/react/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <style>
         body {
-            background-image: url('https://placehold.co/800x600?text=Background+Image+of+Cars+in+a+Garage+with+Neon+Lights');
-            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+        background-size: cover;
             background-position: center;
-            font-family: 'Arial', sans-serif;
         }
+        .payment-method {
+            width: 50px;
+            height: 30px;
+            margin: 0 6px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .paypal { background-color: #003087; }
+        .western-union { background-color: #FFC300; color: black; }
+        .visa { background-color: #1A1F71; }
+        .mastercard { background-color: #EB001B; }
+        .discover { background-color: #FF9F00; }
     </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel">
-        function App() {
-            return (
-                <div className="flex items-center justify-center min-h-screen">
-                    <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-                        <h2 className="text-xl font-bold mb-4">INFORMACIÓN DE CONTACTO</h2>
-                        <form>
-                            <div className="mb-4">
-                                <input type="text" placeholder="Nombre" className="w-full p-2 border border-gray-300 rounded mb-2" />
-                                <input type="text" placeholder="Apellidos" className="w-full p-2 border border-gray-300 rounded" />
-                            </div>
-                            <div className="mb-4">
-                                <input type="email" placeholder="Correo electrónico" className="w-full p-2 border border-gray-300 rounded mb-2" />
-                                <input type="text" placeholder="Nombre de la compañía" className="w-full p-2 border border-gray-300 rounded" />
-                            </div>
-                            <h2 className="text-xl font-bold mb-4">MÉTODO DE PAGO</h2>
-                            <div className="mb-4 flex items-center justify-between">
-                                <img src="https://placehold.co/50x30?text=PayPal" alt="PayPal" className="h-8" />
-                                <img src="https://placehold.co/50x30?text=Western+Union" alt="Western Union" className="h-8" />
-                                <img src="https://placehold.co/50x30?text=VISA" alt="VISA" className="h-8" />
-                                <img src="https://placehold.co/50x30?text=MasterCard" alt="MasterCard" className="h-8" />
-                                <img src="https://placehold.co/50x30?text=Discover" alt="Discover" className="h-8" />
-                            </div>
-                            <div className="mb-4">
-                                <input type="text" placeholder="Nombre en la tarjeta" className="w-full p-2 border border-gray-300 rounded mb-2" />
-                                <input type="text" placeholder="1234 1234 1234 1234" className="w-full p-2 border border-gray-300 rounded mb-2" />
-                                <div className="flex">
-                                    <input type="text" placeholder="MM/AA" className="w-1/2 p-2 border border-gray-300 rounded mb-2 mr-2" />
-                                    <input type="text" placeholder="CVC" className="w-1/2 p-2 border border-gray-300 rounded mb-2" />
-                                </div>
-                            </div>
-                            <div className="mb-4">
-                                <input type="checkbox" id="terms" className="mr-2" />
-                                <label htmlFor="terms">Por favor acepta los términos y condiciones antes de continuar</label>
-                            </div>
-                            <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">Comprar</button>
-                        </form>
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-xl font-bold mb-4">INFORMACIÓN DE CONTACTO</h2>
+            <form id="paymentForm">
+                <div class="mb-4">
+                    <input type="text" placeholder="Nombre" class="w-full p-2 border border-gray-300 rounded mb-2" required />
+                    <input type="text" placeholder="Apellidos" class="w-full p-2 border border-gray-300 rounded" required />
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Correo electrónico" class="w-full p-2 border border-gray-300 rounded mb-2" required />
+                    <input type="text" placeholder="Nombre de la compañía" class="w-full p-2 border border-gray-300 rounded" required />
+                </div>
+                <h2 class="text-xl font-bold mb-4">MÉTODO DE PAGO</h2>
+                <div class="mb-4 flex items-center justify-between">
+                    <div class="payment-method paypal">PayPal</div>
+                    <div class="payment-method western-union">Western Union</div>
+                    <div class="payment-method visa">VISA</div>
+                    <div class="payment-method mastercard">MasterCard</div>
+                    <div class="payment-method discover">Discover</div>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Nombre en la tarjeta" class="w-full p-2 border border-gray-300 rounded mb-2" required />
+                    <input type="text" placeholder="1234 1234 1234 1234" class="w-full p-2 border border-gray-300 rounded mb-2" required />
+                    <div class="flex">
+                        <input type="text" placeholder="MM/AA" class="w-1/2 p-2 border border-gray-300 rounded mb-2 mr-2" required />
+                        <input type="text" placeholder="CVC" class="w-1/2 p-2 border border-gray-300 rounded mb-2" required />
                     </div>
                 </div>
-            );
-        }
-
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
-</body>
-</html>
+                <div class="mb-4">
+                    <input type="checkbox" id="terms" class="mr-2" required />
+                    <label for="terms">Por favor acepta los términos y condiciones antes de continuar</label>
+                </div>
+                <button type="button" onclick="goBack()" class="w-full bg-gray-500 text-white p-2 rounded mb-2">Regresar</button>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Comprar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+            })
+            alert("Comprobando validación...");
+            setTimeout(() => {
+                alert("Pago exitoso");})
