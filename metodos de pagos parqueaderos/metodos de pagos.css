@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+background-size: cover;
+    background-position: center;
+}
+.payment-method {
+    width: 50px;
+    height: 30px;
+    margin: 0 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.paypal { background-color: #003087; }
+.western-union { background-color: #FFC300; color: black; }
+.visa { background-color: #1A1F71; }
+.mastercard { background-color: #EB001B; }
+.discover { background-color: #FF9F00; }
