@@ -1,0 +1,437 @@
+<html>
+ <head>
+  <title>
+   Sistem Parking Yopal
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header .nav-icons i {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .header .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-icons .vip {
+            background-color: #007bff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .main-content {
+            padding: 20px;
+            background-image: url('https://placehold.co/1200x800');
+            background-size: cover;
+            background-position: center;
+        }
+        .main-content h1 {
+            color: #333;
+        }
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .table-container {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container th, .table-container td {
+            padding: 15px;
+            text-align: left;
+        }
+        .table-container th {
+            background-color: #007bff;
+            color: white;
+        }
+        .table-container tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .table-container .actions {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .table-container .actions button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .social-icons i {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="SPY Logo" height="50" src="https://storage.googleapis.com/a1aa/image/SEkMsAYqtnKiJZFQRKkE1DJ5flIcJSWgCveoRQ5URM5uwwvTA.jpg" width="50"/>
+   <div class="nav-icons">
+    <i class="fas fa-file-alt">
+    </i>
+    <i class="fas fa-tags">
+    </i>
+    <i class="fas fa-calendar-alt">
+    </i>
+    <i class="fas fa-bell">
+    </i>
+    <i class="fas fa-comments">
+    </i>
+    <div class="vip">
+     VIP
+    </div>
+   </div>
+  </div>
+  <div class="main-content">
+   <h1>
+    Sistem Parking Yopal
+   </h1>
+   <p>
+    Soluciones de estacionamiento a tu medida
+   </p>
+   <div class="search-bar">
+    <input placeholder="Buscar más parqueaderos disponibles" type="text"/>
+   </div>
+   <div class="table-container">
+    <table>
+     <thead>
+      <tr>
+       <th>
+        Parqueaderos
+       </th>
+       <th>
+        Catalogo
+       </th>
+       <th>
+        Lugar
+       </th>
+       <th>
+        Horario
+       </th>
+       <th>
+        Calificación del lugar
+       </th>
+       <th>
+        Precios
+       </th>
+       <th>
+        Página web
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        <img alt="Parqueadero 2" height="50" src="https://storage.googleapis.com/a1aa/image/CtvcZg720a5kC1kBk1ZVftMY7CduqWU9f0qQjCxxl4uwwwvTA.jpg" width="50"/>
+        <div>
+         <strong>
+          Parqueadero 2
+         </strong>
+         <br/>
+         Juztani
+        </div>
+       </td>
+       <td>
+        Encuentros sociales
+       </td>
+       <td>
+        CL 7, 47B-08 Yopal, Casanare
+       </td>
+       <td>
+        1PM a 2AM
+       </td>
+       <td>
+        Abierto
+        <br/>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </td>
+       <td>
+        $500 1hora
+        <br/>
+        $2000 Todo el día
+        <br/>
+        $5000 Todo el mes
+       </td>
+       <td>
+        <a href="#">
+         www.parqueadero2.com
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Parqueadero 1" height="50" src="https://storage.googleapis.com/a1aa/image/ZChj3O8DU5bKPlHXR2OOPfWr9DTXFlvAFtesVQQ7bh6swwvTA.jpg" width="50"/>
+        <div>
+         <strong>
+          Parqueadero 1
+         </strong>
+         <br/>
+         Divisak2
+        </div>
+       </td>
+       <td>
+        Espacios de estacionamiento
+       </td>
+       <td>
+        Calle Principal #123, Yopal, Casanare
+       </td>
+       <td>
+        24 horas
+       </td>
+       <td>
+        Abierto
+        <br/>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </td>
+       <td>
+        $500 1hora
+        <br/>
+        $2000 Todo el día
+        <br/>
+        $5000 Todo el mes
+       </td>
+       <td>
+        <a href="#">
+         www.parqueadero1.com
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Parqueadero 3" height="50" src="https://storage.googleapis.com/a1aa/image/kdSA2Ik1r2rAGN34hfPkkZov64H0o2ndS7RN8Muq6VIVY43JA.jpg" width="50"/>
+        <div>
+         <strong>
+          Parqueadero 3
+         </strong>
+         <br/>
+         Casik2
+        </div>
+       </td>
+       <td>
+        Espacios de estacionamiento
+       </td>
+       <td>
+        Carrera 5, 30-24 Yopal, Casanare
+       </td>
+       <td>
+        6AM a 12AM
+       </td>
+       <td>
+        Abierto
+        <br/>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </td>
+       <td>
+        $500 1hora
+        <br/>
+        $2000 Todo el día
+        <br/>
+        $5000 Todo el mes
+       </td>
+       <td>
+        <a href="#">
+         www.parqueadero3.com
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Parqueadero 5" height="50" src="https://storage.googleapis.com/a1aa/image/HBDfueRPFfPFXoVteay8HER8iPFTre0JaylEZG2lBpj8FGe7E.jpg" width="50"/>
+        <div>
+         <strong>
+          Parqueadero 5
+         </strong>
+         <br/>
+         Casiok2
+        </div>
+       </td>
+       <td>
+        Nuevo parqueadero
+       </td>
+       <td>
+        Carrera 8, 12-13 Yopal, Casanare
+       </td>
+       <td>
+        24 horas
+       </td>
+       <td>
+        Abierto
+        <br/>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </td>
+       <td>
+        $500 1hora
+        <br/>
+        $2000 Todo el día
+        <br/>
+        $5000 Todo el mes
+       </td>
+       <td>
+        <a href="#">
+         www.parqueadero5.com
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Parqueadero 4" height="50" src="https://storage.googleapis.com/a1aa/image/7NDv3yaCPbb9DRgh8M8ufeVzngEiSeeqnRiEFh0lv00iCDfdC.jpg" width="50"/>
+        <div>
+         <strong>
+          Parqueadero 4
+         </strong>
+         <br/>
+         Casiok2
+        </div>
+       </td>
+       <td>
+        Ofrecemos seguridad
+       </td>
+       <td>
+        Calle 20, 20-20 Yopal, Casanare
+       </td>
+       <td>
+        7AM a 7PM
+       </td>
+       <td>
+        Cerrado
+        <br/>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </td>
+       <td>
+        $500 1hora
+        <br/>
+        $2000 Todo el día
+        <br/>
+        $5000 Todo el mes
+       </td>
+       <td>
+        <a href="#">
+         www.parqueadero4.com
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <div class="actions">
+    <button>
+     Vista de administrador
+    </button>
+    <button>
+     Vista de usuario
+    </button>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    Calle 24 #8-19 Piso 1, Yopal Casanare Colombia
+    <br/>
+    Celular: 310 123 4567
+    <br/>
+    Correo: info@sistemparkingyopal.com
+    <br/>
+    Horario de atención: Lunes a Viernes de 8:00 am a 5:00 pm
+   </p>
+   <div class="social-icons">
+    <i class="fab fa-twitter">
+    </i>
+    <i class="fab fa-linkedin">
+    </i>
+    <i class="fab fa-instagram">
+    </i>
+    <i class="fab fa-facebook">
+    </i>
+   </div>
+   <p>
+    @SystemParkingYopal
+   </p>
+  </div>
+ </body>
+</html>
