@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+}
+input {
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+input:focus {
+    border-color: #4A90E2; /* Color del borde al enfocar */
+    outline: none; /* Eliminar el contorno por defecto */
+}
+
+button {
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para los botones */
+}
+
+button:hover {
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+.bg-gray-200 {
+    background-color: rgba(229, 229, 229, 0.9); /* Fondo gris con un poco de opacidad */
+}
+
+h2, h3 {
+    color: #333; /* Color del texto de los encabezados */
+}
+
+.text-center {
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Estilos para los botones de acción */
+.bg-red-500 {
+    background-color: #f56565; /* Color de fondo para el botón de cancelar */
+}
+
+.bg-green-500 {
+    background-color: #48bb78; /* Color de fondo para el botón de aceptar */
+}
+
+.bg-red-500:hover {
+    background-color: #e53e3e; /* Color de fondo al pasar el ratón para cancelar */
+}
+
+.bg-green-500:hover {
+    background-color: #38a169; /* Color de fondo al pasar el ratón para aceptar */
+}
