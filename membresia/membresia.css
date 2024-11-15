@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #1f2937; /* Color gris oscuro */
+}
+
+h1 {
+    color: #000; /* Color negro para el título */
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.75); /* Fondo blanco con opacidad */
+}
+
+.bg-gray-300 {
+    background-color: #d1d5db; /* Color gris claro para botones */
+}
+
+.text-black {
+    color: #000; /* Color negro para texto */
+}
+
+.text-gray-700 {
+    color: #374151; /* Color gris oscuro para texto de la lista */
+}
+
+button {
+    transition: background-color 0.3s; /* Transición suave para el botón */
+}
+
+button:hover {
+    background-color: #a1a1a1; /* Color de fondo al pasar el ratón */
+}

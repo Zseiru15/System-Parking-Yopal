@@ -1,0 +1,91 @@
+<html>
+    <head> <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+        background-size: cover;
+            background-position: center;
+        }
+    </style>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-lg mx-auto mt-10 bg-white shadow-lg rounded-lg">
+        <div class="flex justify-between items-center bg-gray-800 text-white p-4 rounded-t-lg">
+            <div class="flex-1 text-center">
+                <h2 class="text-lg font-semibold">Editar datos</h2>
+            </div>
+            <i class="fas fa-times cursor-pointer"></i>
+        </div>
+        <div class="border-b-2 border-blue-500"></div>
+        <div class="p-4">
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold">Datos</h3>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <input type="file" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Nombre de usuario" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Apellido de usuario" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Numero de identificacion" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Edad" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Genero" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Ciudad" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Estado civil" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Lugares de parqueadero" class="flex-1 border border-gray-300 rounded p-2">
+                </div>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-2">Redes sociales</h3>
+                <div class="flex space-x-4">
+                    <i class="fab fa-whatsapp text-4xl text-green-500 cursor-pointer"></i>
+                    <i class="fab fa-facebook text-4xl text-blue-700 cursor-pointer"></i>
+                    <i class="fab fa-telegram text-4xl text-blue-500 cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="mt-6 flex justify-end space-x-4">
+                <button id="cancelButton" class="bg-gray-500 text-white px-4 py-2 rounded">Cancelar</button>
+                <button id="saveButton" class="bg-blue-500 text-white px-4 py-2 rounded">Guardar datos</button>
+            </div>
+            <div id="message" class="mt-4 text-center"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('saveButton').addEventListener('click', function() {
+            const messageDiv = document.getElementById('message');
+            if (navigator.onLine) {
+                messageDiv.textContent = 'Guardado con éxito';
+                messageDiv.className = 'text-green-500';
+            } else {
+                messageDiv.textContent = 'Error: No hay conexión a Internet';
+                messageDiv.className = 'text-red-500';
+            }
+        });
+
+        document.getElementById('cancelButton').addEventListener('click', function() {
+            // Add your cancel logic here
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = '';
+        });
+    </script>
+</body>
+</html>
