@@ -1,10 +1,5 @@
-<html>
-<head>
-<title>
-Registro de Vehículo
-</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-<style>
+<html> <head><title>Registro de Vehículo </title> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/> <style>
 body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -119,8 +114,7 @@ body {
         .message.success {
             color: green;
         }
-</style>
-<script>
+</style> <script>
     function checkInternetConnection() {
         return window.navigator.onLine;
     }
@@ -135,99 +129,24 @@ body {
             messageDiv.className = 'message error';
         }
     }
-</script>
-</head>
-<body>
-<div class="navbar">
-<div class="logo">
-    <img alt="Logo" height="50" src="C:\Users\mairo\OneDrive\Documents\proyecto del sena\Sin título.jpeg" width="50"/>
-</div>
-<a href="#">
-    Pagos
-</a>
-<a href="#">
-    Ofertas
-</a>
-<a href="#">
-    Reservas
-</a>
-<a href="#">
-    Notificación
-</a>
-<a href="#">
-    Comentarios
-</a>
-<a href="#">
-    Info
-</a>
-</div>
-<div class="form-container">
-<h2>
-    <i class="fas fa-car">
-    </i>
-    Registro de vehículo
-</h2>
-<div class="form-group">
-    <div>
-    <label for="marca">
-    Marca del Vehículo
-    </label>
-    <input id="marca" placeholder="Ej. Toyota" type="text"/>
-    </div>
-    <div>
-    <label for="anio">
-    Año
-    </label>
-    <input id="anio" placeholder="Año de carro" type="text"/>
-    </div>
-</div>
-<div class="form-group">
-    <div>
-    <label for="modelo">
-    Modelo del Vehículo
-    </label>
-    <input id="modelo" placeholder="Ej. Corolla" type="text"/>
-    </div>
-    <div>
-    <label for="imagen">
-    Imagen
-    </label>
-    <label class="file-label" for="imagen">
-    <i class="fas fa-upload">
-    </i>
-    AGREGAR IMAGEN
-    </label>
-    <input class="file-input" id="imagen" type="file"/>
-    </div>
-    </div>
-    <div class="form-group">
-    <div>
-    <label for="placa">
-    Placa del Vehículo
-    </label>
-    <input id="placa" placeholder="Número de placa" type="text"/>
-    </div>
-    <div>
-    <label for="tipo">
-    Tipo de vehículo
-    </label>
-    <select id="tipo">
-    <option>
-    Ej. Carro
-    </option>
-    </select>
-    </div>
-    </div>
-    <div class="form-actions">
-    <button class="register-btn" onclick="registerVehicle()">
-    Registrar
-    </button>
-    <button class="cancel-btn">
-    Cancelar
-    </button>
-</div>
-<div id="message" class="message">
-</div>
-</div>
-</body>
+</script></head> <body>
+<div class="navbar"> <div class="logo">
+<img alt="Logo" height="50" src="C:\Users\mairo\OneDrive\Documents\proyecto del sena\Sin título.jpeg" width="50"/></div>
+<a href="#"> Pagos </a> <a href="#"> Ofertas
+</a> <a href="#"> Reservas </a> <a href="#"> Notificación </a>
+<a href="#"> Comentarios </a> <a href="#"> Info </a> </div>
+<div class="form-container"> <h2> <i class="fas fa-car"> </i> Registro de vehículo </h2>
+<div class="form-group"> <div> <label for="marca"> Marca del Vehículo </label>
+<input id="marca" placeholder="Ej. Toyota" type="text"/> </div> <div> <label for="anio"> Año </label>
+<input id="anio" placeholder="Año de carro" type="text"/>
+</div> </div> <div class="form-group"> <div> <label for="modelo">Modelo del Vehículo </label>
+<input id="modelo" placeholder="Ej. Corolla" type="text"/> </div>
+<div> <label for="imagen"> Imagen </label><label class="file-label" for="imagen"> <i class="fas fa-upload">
+    </i> AGREGAR IMAGEN </label> <input class="file-input" id="imagen" type="file"/>
+    </div> </div> <div class="form-group"> <div>
+    <label for="placa"> Placa del Vehículo </label> <input id="placa" placeholder="Número de placa" type="text"/> </div> <div>
+    <label for="tipo"> Tipo de vehículo </label> <select id="tipo"> <option> Ej. Carro </option> </select> </div> </div>
+    <div class="form-actions"><button class="register-btn" onclick="registerVehicle()"> Registrar </button>
+    <button class="cancel-btn"> Cancelar </button>
+</div> <div id="message" class="message"> </div> </div> </body>
 </html>
