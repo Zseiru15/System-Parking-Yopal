@@ -1,22 +1,28 @@
 <html>
 <head>
-    <title>Horaris</title>
+    <title> registro vehicular</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
     <style>
-        body {
+        body 
+        {
+            background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+            background-size: cover;
+            background-position: center;
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
+            margin: 50;
+            padding: 50;
         }
         .container {
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
+            background-color: white;
+            width: 600px;
+            padding: 80px;
+            border-radius: 50px;
+            box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h1 {
             font-size: 24px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-align: center;
         }
         .form-group {
@@ -30,14 +36,14 @@
             width: 100%;
             padding: 10px;
             font-size: 16px;
-            border: 1px solid #ccc;
+            border: 1px solid #ffff;
             border-radius: 5px;
         }
         .form-group input[type="time"] {
             padding: 5px;
         }
         .note {
-            background-color: #f9f9f9;
+            background-color: #ffff;
             padding: 10px;
             border-left: 5px solid #4caf50;
             margin-bottom: 20px;
@@ -60,11 +66,11 @@
         }
         .buttons .print-button {
             background-color: #007bff;
-            color: #fff;
+            color: #f2f2f2;
         }
         .buttons .save-button {
             background-color: #007bff;
-            color: #fff;
+            color: #f1f1f1;
         }
         .extra-buttons {
             display: none;
@@ -132,7 +138,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Horaris</h1>
+        <h1>REGISTRO DE VEHICULOS </h1>
         <div class="form-group">
             <label for="current-date">Día</label>
             <input type="date" id="current-date" value="2023-10-01">
