@@ -1,0 +1,131 @@
+body 
+        {
+            background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 50;
+            padding: 50;
+        }
+        .container {
+            background-color: white;
+            width: 600px;
+            padding: 80px;
+            border-radius: 50px;
+            box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ffff;
+            border-radius: 5px;
+        }
+        .form-group input[type="time"] {
+            padding: 5px;
+        }
+        .note {
+            background-color: #ffff;
+            padding: 10px;
+            border-left: 5px solid #4caf50;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .note .fa-check-circle {
+            color: #4caf50;
+            margin-right: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons .print-button {
+            background-color: #007bff;
+            color: #f2f2f2;
+        }
+        .buttons .save-button {
+            background-color: #007bff;
+            color: #f1f1f1;
+        }
+        .extra-buttons {
+            display: none;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .extra-buttons button {
+            margin-bottom: 10px;
+        }
+        .days-list {
+            margin-top: 20px;
+        }
+        .days-list .day-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .days-list .day-item:last-child {
+            border-bottom: none;
+        }
+        .days-list .day-item .actions i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .history-title {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .view-button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .history-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .history-modal h2 {
+            margin-top: 0;
+        }
+        .history-modal .close-button {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
