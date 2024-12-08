@@ -11,7 +11,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
+.center {
+    text-align: center;
+}  
 .header img {
     height: 50px;
 }

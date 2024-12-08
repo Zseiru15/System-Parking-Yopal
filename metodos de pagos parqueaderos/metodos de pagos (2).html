@@ -1,0 +1,104 @@
+<html lang="pagos">
+<head>
+    <meta charset="metodos de pagos">
+    <meta name="pagos" content="">
+    <title>Formulario de Pago</title>
+    <link href="metodos de pagos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+            <h2 class="text-xl font-semibold mb-4">INFORMACIÓN DE CONTACTO</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block mb-1" for="first-name">
+                            <i class="fas fa-user"></i> Nombres
+                        </label>
+                        <input class="w-full border border-gray-300 p-2 rounded" id="first-name" placeholder="Nombres" type="text"/>
+                    </div>
+                    <div>
+                        <label class="block mb-1" for="last-name">
+                            <i class="fas fa-user"></i> Apellidos
+                        </label>
+                        <input class="w-full border border-gray-300 p-2 rounded" id="last-name" placeholder="Apellidos" type="text"/>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1" for="email">
+                        <i class="fas fa-envelope"></i> Correo electrónico
+                    </label>
+                    <input class="w-full border border-gray-300 p-2 rounded" id="email" placeholder="Correo electrónico" type="email"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1" for="company">
+                        <i class="fas fa-building"></i> Nombre de la compañía
+                    </label>
+                    <input class="w-full border border-gray-300 p-2 rounded" id="company" placeholder="Nombre de la compañía" type="text"/>
+                </div>
+                <h2 class="text-xl font-semibold mb-4">MÉTODO DE PAGO</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb
+                <div class="mb-4">
+                    <label class="block mb-1" for="payment-method">
+                
+                    <img alt="PayPal logo" class="h-8" src="https://storage.googleapis.com/a1aa/image/rbVb1iZ965bFAle9d3agmEKILIQnBADwEd9i2xiKzA8Yyb8JA.jpg"/>
+                    
+                    <img alt="Western Union logo" class="h-8" src="https://storage.googleapis.com/a1aa/image/qoWrdJEZ255xKJM4VCmOwh1j1G8MdDUyFVBrYhzXwO8L5NeJA.jpg"/>
+                    
+                    <img alt="Visa logo" class="h-8" src="https://storage.googleapis.com/a1aa/image/wytVZkeeuvv5zkMvnH1hD3ewg5ym0N7OULjN2BJgLuigJvxnA.jpg"/>
+                    
+                    <img alt="MasterCard logo" class="h-8" src="https://storage.googleapis.com/a1aa/image/I4itwlVttT79MRKea1Mfo1og41ulR5itRXEescMjMUOdJvxnA.jpg"/>
+                    <img alt="American Express logo" class="h-8" src="https://storage.googleapis.com/a1aa/image/wU4UtLNMd8onMVS5RHtLNUTuUYF0TlOBsP4lrqWRKmnM5NeJA.jpg"/>
+                    
+                    </label>
+                    <select class="w-full border border-gray-300 p-2 rounded" id="payment-method">
+                        <option value="PayPal">PayPal</option>
+                        <option value="Western Union">Western Union</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="American Express">American Express</option>
+                    </select>
+                </div>
+
+                    <div class="mb-4">
+                        <label class="block mb-1" for="card-number">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1" for="card-name">
+                        <i class="fas fa-user"></i> Nombre en la tarjeta
+                    </label>
+                    <input class="w-full border border-gray-300 p-2 rounded" id="card-name" placeholder="Nombre en la tarjeta" type="text"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1" for="card-number">
+                        <i class="fas fa-credit-card"></i> 1234 1234 1234 1234
+                    </label>
+                    <input class="w-full border border-gray-300 p-2 rounded" id="card-number" placeholder="1234 1234 1234 1234" type="text"/>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block mb-1" for="expiry-date">
+                            <i class="fas fa-calendar-alt"></i> MM/AA
+                        </label>
+                        <input class="w-full border border-gray-300 p-2 rounded" id="expiry-date" placeholder="MM/AA" type="text"/>
+                    </div>
+                    <div>
+                        <label class="block mb-1" for="cvc">
+                            <i class="fas fa-lock"></i> CVC
+                        </label>
+                        <input class="w-full border border-gray-300 p-2 rounded" id="cvc" placeholder="CVC" type="text"/>
+                    
+                </div>
+                <div class="mb-4">
+                    <label class="inline-flex items-center">
+                        <input class="form-checkbox" type="checkbox"/>
+                        <span class="ml-2">Por favor acepte los términos y condiciones antes de continuar</span>
+                    </label>
+                </div>
+                <button class="w-full bg-blue-600 text-white p-2 rounded" type="submit">Comprar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

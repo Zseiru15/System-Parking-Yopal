@@ -1,21 +1,107 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
-background-size: cover;
+    background-size: cover;
     background-position: center;
-}
-.payment-method {
-    width: 50px;
-    height: 30px;
-    margin: 0 6px;
-    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background-image: url("C:\Users\mairo\OneDrive\Documents\repo_sena\System-Parking-Yopal\Bienvenida\parking2.jpg");
+     /* fondo semitransparente */
+}
+
+.bg-white {
+    background-color: white;
+}
+.p-8 {
+    padding: 2rem; /* padding para el contenedor */
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* bordes redondeados */
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* sombra del contenedor */
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-lg {
+    max-width: 32rem; /* anchura máxima */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.md\\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* para pantallas medianas */
+}
+
+.gap-4 {
+    gap: 1rem; /* espacio entre elementos del grid */
+}
+
+.border {
+    border: 1px solid #d1d5db; /* gris claro */
+}
+
+.border-gray-300 {
+    border-color: #d1d5db;
+}
+
+.p-2 {
+    padding: 0.5rem; /* padding para campos */
+}
+
+.rounded {
+    border-radius: 0.25rem; /* bordes redondeados pequeños */
+}
+
+.h-8 {
+    height: 2rem; /* altura de los logotipos */
+}
+
+.bg-blue-600 {
+    background-color: #2563eb; /* color azul */
+}
+
+.text-white {
     color: white;
 }
-.paypal { background-color: #003087; }
-.western-union { background-color: #FFC300; color: black; }
-.visa { background-color: #1A1F71; }
-.mastercard { background-color: #EB001B; }
-.discover { background-color: #FF9F00; }
+
+.inline-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.form-checkbox {
+    margin-right: 0.5rem; /* margen para checkbox */
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8; /* azul más oscuro */
+}
