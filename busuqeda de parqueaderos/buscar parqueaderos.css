@@ -1,101 +1,66 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
+
 .header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    background-color: #0080ff;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
 }
-.center {
-    text-align: center;
-}  
-.header img {
-    height: 50px;
+
+.nav-icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
-.header .nav-icons i {
+
+.nav-icons i {
     margin: 0 10px;
-    font-size: 20px;
+    cursor: pointer;
 }
-.header .nav-icons {
-    display: flex;
-    align-items: center;
+
+.vip {
+    font-weight: bold;
+    color: #ff0000;
 }
-.header .nav-icons .vip {
-    background-color: #007bff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+
 .main-content {
     padding: 20px;
-    background-image: url('https://placehold.co/1200x800');
-    background-size: cover;
-    background-position: center;
 }
-.main-content h1 {
-    color: #333;
-}
+
 .search-bar {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 20px;
 }
-.search-bar input {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+.search-bar button, .search-bar input {
+    margin-right: 10px;
+    padding: 5px 10px;
 }
+
 .table-container {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    overflow-x: auto;
 }
-.table-container table {
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
-.table-container th, .table-container td {
-    padding: 15px;
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: left;
 }
-.table-container th {
-    background-color: #007bff;
-    color: white;
-}
-.table-container tr:nth-child(even) {
+
+th {
     background-color: #f2f2f2;
 }
-.table-container .actions {
-    text-align: center;
-    margin: 20px 0;
-}
-.table-container .actions button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 10px;
-}
+
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #0084ff;
+    padding: 10px;
     text-align: center;
-}
-.footer .social-icons i {
-    margin: 0 10px;
-    font-size: 20px;
 }
