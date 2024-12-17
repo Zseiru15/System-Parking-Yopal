@@ -1,0 +1,168 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container {
+    padding: 20px;
+}
+.vip-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.vip-section h2 {
+    margin-top: 0;
+}
+.vip-section form {
+    display: flex;
+    flex-direction: column;
+}
+.vip-section form input, 
+.vip-section form select, 
+.vip-section form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+.vip-section form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.vip-section form button:hover {
+    background-color: #555;
+}
+.notification {
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.back-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.back-button:hover {
+    background-color: #555;
+}
+#campo_numero {
+    margin-top: 10px;
+}
+#politicas {
+    font-size: 14px;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#politicas h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#politicas p {
+    margin: 5px 0;
+}
+.metodo-pago {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo para el botón */
+#realizar-pago {
+    padding: 8px 16px; /* Espaciado para hacerlo más pequeño */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* El cursor será una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición para el color */
+}
+
+#realizar-pago:hover {
+    background-color: #45a049; /* Cambia el color al pasar el mouse sobre el botón */
+}
+/* Estilo para el botón regresar */
+.back-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
