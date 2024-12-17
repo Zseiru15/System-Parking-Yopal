@@ -1,31 +1,33 @@
-<html>
+<html lang="es">
 <head>
-    <title> registro vehicular</title>
-    <link rel="stylesheet" href="formuraui.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Vehicular</title>
+    <link rel="stylesheet" href="formuraui de recibo.css">
+    <script src="formurario de recibo.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>REGISTRO DE VEHICULOS </h1>
+        <h1>Registro de Vehículos</h1>
         <div class="form-group">
             <label for="current-date">Día</label>
-            <input type="date" id="current-date" value="2023-10-01">
+            <input type="date" id="current-date">
         </div>
         <div class="form-group">
             <label for="start-time">Inicia</label>
-            <input type="time" id="start-time" value="02:00">
+            <input type="time" id="start-time">
         </div>
         <div class="form-group">
             <label for="end-time">Termina</label>
-            <input type="time" id="end-time" value="10:00">
+            <input type="time" id="end-time">
         </div>
         <div class="form-group">
             <label for="ticket">Ticket</label>
-            <input type="text" id="ticket" value="XDZ345" readonly>
+            <input type="text" id="ticket" readonly>
         </div>
         <div class="form-group">
             <label for="plate">Placa</label>
-            <input type="text" id="plate" value="YZ Yamaha">
+            <input type="text" id="plate" placeholder="Ingrese la placa">
         </div>
         <div class="form-group">
             <label for="brand">Marca</label>
@@ -55,42 +57,6 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="day">Días</label>
-            <select id="day">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                <option>24</option>
-                <option>25</option>
-                <option>26</option>
-                <option>27</option>
-                <option>28</option>
-                <option>29</option>
-                <option>30</option>
-                <option>31</option>
-            </select>
-        </div>
-        <div class="form-group">
             <label for="address">Dirección del lugar</label>
             <input type="text" id="address" placeholder="Ingrese la dirección del lugar">
         </div>
@@ -102,176 +68,10 @@
             <label for="cashier">Nombre del cajero</label>
             <input type="text" id="cashier" placeholder="Ingrese el nombre del cajero">
         </div>
-        <div class="note" id="note">
-            <i class="fas fa-check-circle"></i> Nota: gracias por elergirnos
-        </div>
         <div class="buttons">
             <button class="print-button" onclick="showExtraButtons()">Imprimir Recibo</button>
             <button class="save-button" onclick="saveSettings()">Guardar ajustes</button>
         </div>
-        <div class="extra-buttons" id="extra-buttons">
-            <button class="entry-button" onclick="printReceipt('Entrada')">Entrada del Vehículo</button>
-            <button class="exit-button" onclick="printReceipt('Salida')">Salida del Vehículo</button>
-        </div>
-        <div class="history-title" id="history-title">Historial de Mes</div>
-        <div class="days-list" id="days-list">
-            <div class="day-item">
-                <span>20 de febrero</span>
-                <div class="actions">
-                    <i class="fas fa-trash" onclick="confirmDelete(this)"></i>
-                    <button class="view-button" onclick="viewDetails()">Ver Vista</button>
-                </div>
-            </div>
-            <div class="day-item">
-                <span>15 de marzo</span>
-                <div class="actions">
-                    <i class="fas fa-trash" onclick="confirmDelete(this)"></i>
-                    <button class="view-button" onclick="viewDetails()">Ver Vista</button>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <div class="history-modal" id="history-modal">
-        <h2>Historial de Mes</h2>
-        <div id="history-content"></div>
-        <button class="close-button" onclick="closeHistoryModal()">Cerrar</button>
-    </div>
-
-    <script>
-        let settingsSaved = false;
-        let history = [];
-        let actionType = '';
-
-        function saveSettings() {
-            const currentDate = document.getElementById('current-date').value;
-            const startTime = document.getElementById('start-time').value;
-            const endTime = document.getElementById('end-time').value;
-            const ticket = document.getElementById('ticket').value;
-            const plate = document.getElementById('plate').value;
-            const brand = document.getElementById('brand').value;
-            const month = document.getElementById('month').value;
-            const day = document.getElementById('day').value;
-            const address = document.getElementById('address').value;
-            const rate = document.getElementById('rate').value;
-            const cashier = document.getElementById('cashier').value;
-
-            const entry = {
-                currentDate,
-                startTime,
-                endTime,
-                ticket,
-                plate,
-                brand,
-                month,
-                day,
-                address,
-                rate,
-                cashier
-            };
-
-            history.push(entry);
-
-            document.getElementById('note').style.display = 'block';
-            document.getElementById('note').style.backgroundColor = '#d4edda';
-            document.getElementById('note').style.borderLeftColor = '#28a745';
-            settingsSaved = true;
-        }
-
-        function showExtraButtons() {
-            if (settingsSaved) {
-                document.getElementById('extra-buttons').style.display = 'flex';
-            } else {
-                alert('Para imprimir toca guardar los datos');
-            }
-        }
-
-        function printReceipt(type) {
-            actionType = type;
-            alert(`${type} del Vehículo seleccionada`);
-            window.location.href = `recibo_${type.toLowerCase()}.html`;
-        }
-
-        function generateNewTicket() {
-            const ticketInput = document.getElementById('ticket');
-            const newTicket = 'XDZ' + Math.floor(Math.random() * 1000).toString().padStart(3, '0');
-            ticketInput.value = newTicket;
-        }
-
-        function confirmDelete(element) {
-            if (confirm('¿Está seguro de que desea eliminar este elemento?')) {
-                element.parentElement.parentElement.remove();
-                alert('Elemento eliminado');
-            } else {
-                alert('Eliminación cancelada');
-            }
-        }
-
-        function addDayItem() {
-            const daysList = document.getElementById('days-list');
-            const currentDate = document.getElementById('current-date').value;
-            const startTime = document.getElementById('start-time').value;
-            const endTime = document.getElementById('end-time').value;
-
-            const dayItem = document.createElement('div');
-            dayItem.className = 'day-item';
-            dayItem.innerHTML = `
-                <span>${currentDate} - ${startTime} a ${endTime}</span>
-                <div class="actions">
-                    <i class="fas fa-trash" onclick="confirmDelete(this)"></i>
-                    <button class="view-button" onclick="viewDetails()">Ver Vista</button>
-                </div>
-            `;
-            daysList.appendChild(dayItem);
-        }
-
-        function viewDetails() {
-            if (settingsSaved) {
-                const historyContent = document.getElementById('history-content');
-                historyContent.innerHTML = '';
-
-                history.forEach(entry => {
-                    const entryDiv = document.createElement('div');
-                    entryDiv.innerHTML = `
-                        <p><strong>Fecha:</strong> ${entry.currentDate}</p>
-                        <p><strong>Hora de inicio:</strong> ${entry.startTime}</p>
-                        <p><strong>Hora de término:</strong> ${entry.endTime}</p>
-                        <p><strong>Ticket:</strong> ${entry.ticket}</p>
-                        <p><strong>Placa:</strong> ${entry.plate}</p>
-                        <p><strong>Marca:</strong> ${entry.brand}</p>
-                        <p><strong>Mes:</strong> ${entry.month}</p>
-                        <p><strong>Día:</strong> ${entry.day}</p>
-                        <p><strong>Dirección:</strong> ${entry.address}</p>
-                        <p><strong>Tarifa:</strong> ${entry.rate}</p>
-                        <p><strong>Cajero:</strong> ${entry.cashier}</p>
-                        <hr>
-                    `;
-                    historyContent.appendChild(entryDiv);
-                });
-
-                document.getElementById('history-modal').style.display = 'block';
-            } else {
-                alert('Para ver el historial, primero debe guardar los datos');
-            }
-        }
-
-        function closeHistoryModal() {
-            document.getElementById('history-modal').style.display = 'none';
-        }
-
-        document.getElementById('current-date').addEventListener('change', function() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            document.getElementById('start-time').value = `${hours}:${minutes}`;
-        });
-
-        document.getElementById('end-time').addEventListener('change', function() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            document.getElementById('end-time').value = `${hours}:${minutes}`;
-        });
-    </script>
 </body>
 </html>
