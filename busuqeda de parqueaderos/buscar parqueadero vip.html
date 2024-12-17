@@ -10,7 +10,12 @@
 </head>
 <body>
     <header>
-        <h1>Parqueadero VIP</h1>
+        <div class="header">
+            <img alt="SPY Logo" height="60" src="C:\Users\mairo\OneDrive\Documents\proyecto del sena\Sin título.jpeg" width="60"/>
+        </div>
+        <h1>PARKING VIP</h1>
+    </div>
+        
     </header>
 
     <nav>
@@ -69,8 +74,8 @@
 
                 <button type="submit">Reservar</button>
             </form>
-            <button class="back-button" onclick="showSection('reservar')">Regresar al Inicio</button>
-        </section>
+            <button id="vipButton">Regresar al Inicio</button>
+            </section>
         
         <section id="membresia" class="vip-section">
             <h2>Obtener Membresía VIP</h2>
@@ -109,6 +114,28 @@
         <option value="15-dias">15 Días</option>
         <option value="1-mes">1 Mes</option>
     </select>
+<!-- Descripción de la Membresía -->
+<label for="descripcion">Descripción de la Membresía:</label>
+<textarea id="descripcion" name="descripcion" required></textarea>
+<!-- Checkbox para las Políticas de Privacidad -->
+<label for="privacidad">
+    <input type="checkbox" id="privacidad" name="privacidad" onclick="togglePoliticas()"> Acepto las Políticas de Privacidad
+</label>
+
+<!-- Div para mostrar las Políticas de Privacidad -->
+<div id="politicas" style="display:none; margin-top: 15px; padding: 10px; background-color: #f9f9f9; border-radius: 5px; border: 1px solid #ccc;">
+    <h3>Políticas de Privacidad y Leyes de Tránsito</h3>
+    <h4>Política de Privacidad de Datos:</h4>
+    <p>
+        Al proporcionar sus datos personales, usted acepta que la empresa recoja, almacene y utilice estos datos con el fin de gestionar su membresía en el parqueadero VIP.
+        Todos los datos proporcionados son confidenciales y no serán compartidos con terceros sin su consentimiento explícito.
+    </p>
+
+    <h4>Leyes de Tránsito:</h4>
+    <p>
+        Al utilizar nuestras instalaciones, usted se compromete a cumplir con las leyes de tránsito vigentes. El parqueadero VIP no se hace responsable de infracciones de tránsito que puedan ocurrir dentro o fuera del establecimiento.
+    </p>
+</div>
 
     <form id="form-pago">
         <!-- Método de Pago -->
@@ -160,39 +187,12 @@
         <!-- Botón para realizar el pago -->
         <button type="submit" id="realizar-pago">Realizar Pago</button>
     </form>
+    
+    <a href="file:///C:/Users/mairo/OneDrive/Documents/repo_sena/System-Parking-Yopal/busqueda%20de%20parqueaderos/buscar%20parqueaderos.html">Ir a la página de búsqueda de parqueaderos</a>
 
-    <!-- Descripción de la Membresía -->
-    <label for="descripcion">Descripción de la Membresía:</label>
-    <textarea id="descripcion" name="descripcion" required></textarea>
-    <!-- Checkbox para las Políticas de Privacidad -->
-    <label for="privacidad">
-        <input type="checkbox" id="privacidad" name="privacidad" onclick="togglePoliticas()"> Acepto las Políticas de Privacidad
-    </label>
+        <button id="vipButton">Regresar al Inicio</button>
+    </section>
 
-    <!-- Div para mostrar las Políticas de Privacidad -->
-    <div id="politicas" style="display:none; margin-top: 15px; padding: 10px; background-color: #f9f9f9; border-radius: 5px; border: 1px solid #ccc;">
-        <h3>Políticas de Privacidad y Leyes de Tránsito</h3>
-        <h4>Política de Privacidad de Datos:</h4>
-        <p>
-            Al proporcionar sus datos personales, usted acepta que la empresa recoja, almacene y utilice estos datos con el fin de gestionar su membresía en el parqueadero VIP.
-            Todos los datos proporcionados son confidenciales y no serán compartidos con terceros sin su consentimiento explícito.
-        </p>
-
-        <h4>Leyes de Tránsito:</h4>
-        <p>
-            Al utilizar nuestras instalaciones, usted se compromete a cumplir con las leyes de tránsito vigentes. El parqueadero VIP no se hace responsable de infracciones de tránsito que puedan ocurrir dentro o fuera del establecimiento.
-        </p>
-    </div>
-
-
-
-    <!-- Botón de Enviar -->
-    <button type="submit">Obtener Membresía</button>
-</form>
-
-            <button class="back-button" onclick="showSection('reservar')">Regresar al Inicio</button>
-        </section>
-        
         <section id="notificaciones" class="vip-section">
             <h2>Notificaciones</h2>
             <div class="notification">
@@ -238,9 +238,9 @@
                 <p>¡Promoción exclusiva! Parqueaderos en Yopal y Casaare disponibles con descuentos especiales para miembros VIP. ¡Contáctenos para más detalles!</p>
             </div>
             
-            
-            <button class="back-button" onclick="showSection('reservar')">Regresar al Inicio</button>
+            <button id="vipButton">Regresar al Inicio</button>
         </section>
     </div>
+    
 </body>
 </html>

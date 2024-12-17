@@ -178,3 +178,8 @@ document.getElementById('form-pago').addEventListener('submit', function(event) 
         window.location.href = 'https://www.bancolombia.com.co';
     }
 });
+ // Obtener el botón por su ID
+document.getElementById('vipButton').addEventListener('click', function() {
+    // Redirigir a la página de inicio
+    window.location.href = "file:///C:/Users/mairo/OneDrive/Documents/repo_sena/System-Parking-Yopal/busqueda%20de%20parqueaderos/buscar%20parqueaderos.html";
+});

@@ -27,3 +27,12 @@ function buscar() {
         row.style.display = text.includes(input) ? '' : 'none';
     });
 }
+
+// Escuchar el evento click del botón
+document.getElementById('vipButton').addEventListener('click', function () {
+    // Mostrar mensaje emergente
+    alert("Bienvenido al sistema de parqueadero VIP");
+
+    // Redirigir a otra página
+    window.location.href = "file:///C:/Users/mairo/OneDrive/Documents/repo_sena/System-Parking-Yopal/busuqeda%20de%20parqueaderos/buscar%20parqueadero%20vip.html" // Cambia esta URL por la página deseada
+});
