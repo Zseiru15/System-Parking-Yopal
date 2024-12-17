@@ -1,29 +1,36 @@
-<html lang="es">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Vehicular</title>
+    <title>Registro de Vehículos</title>
     <link rel="stylesheet" href="formuraui de recibo.css">
-    <script src="formurario de recibo.js" defer></script>
+    <style>
+        /* CSS aquí */
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Registro de Vehículos</h1>
+        <h2>Registro de Vehículos</h2>
         <div class="form-group">
-            <label for="current-date">Día</label>
-            <input type="date" id="current-date">
+            <label for="date">Día</label>
+            <input type="date" id="date">
         </div>
         <div class="form-group">
-            <label for="start-time">Inicia</label>
-            <input type="time" id="start-time">
+            <label>Inicia</label>
+            <div class="inline">
+                <input type="radio" name="time" id="start">
+                <label for="start"></label>
+            </div>
         </div>
         <div class="form-group">
-            <label for="end-time">Termina</label>
-            <input type="time" id="end-time">
+            <label>Termina</label>
+            <div class="inline">
+                <input type="radio" name="time" id="end">
+                <label for="end"></label>
+            </div>
         </div>
         <div class="form-group">
             <label for="ticket">Ticket</label>
-            <input type="text" id="ticket" readonly>
+            <input type="text" id="ticket" placeholder="Ingrese el ticket">
         </div>
         <div class="form-group">
             <label for="plate">Placa</label>
@@ -33,32 +40,17 @@
             <label for="brand">Marca</label>
             <select id="brand">
                 <option>Carro</option>
-                <option>Camión</option>
-                <option>Bus</option>
-                <option>Moto</option>
-                <option>Bicicleta</option>
             </select>
         </div>
         <div class="form-group">
             <label for="month">Mes</label>
             <select id="month">
                 <option>Enero</option>
-                <option>Febrero</option>
-                <option>Marzo</option>
-                <option>Abril</option>
-                <option>Mayo</option>
-                <option>Junio</option>
-                <option>Julio</option>
-                <option>Agosto</option>
-                <option>Septiembre</option>
-                <option>Octubre</option>
-                <option>Noviembre</option>
-                <option>Diciembre</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="address">Dirección del lugar</label>
-            <input type="text" id="address" placeholder="Ingrese la dirección del lugar">
+            <label for="location">Dirección del lugar</label>
+            <input type="text" id="location" placeholder="Ingrese la dirección del lugar">
         </div>
         <div class="form-group">
             <label for="rate">Tarifa</label>
@@ -69,8 +61,8 @@
             <input type="text" id="cashier" placeholder="Ingrese el nombre del cajero">
         </div>
         <div class="buttons">
-            <button class="print-button" onclick="showExtraButtons()">Imprimir Recibo</button>
-            <button class="save-button" onclick="saveSettings()">Guardar ajustes</button>
+            <button>Imprimir Recibo</button>
+            <button>Guardar ajustes</button>
         </div>
     </div>
 </body>
