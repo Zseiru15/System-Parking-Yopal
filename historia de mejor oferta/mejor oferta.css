@@ -1,116 +1,145 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://github.com/Zseiru15/System-Parking-Yopal/blob/Ordo%C3%B1ez/Bienvenida/fondo.jpg?raw=true');
-    background-size: cover;
-    background-position: center;
-    color: #000;
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
+    background-image: url('https://github.com/Zseiru15/System-Parking-Yopal/blob/Ordo%C3%B1ez/Bienvenida/fondo.jpg?raw=true'); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #ffe7e7; /* Color del texto (rojo claro) */
+    color: #000000; /* Color del texto para sobreescribir el color anterior para textos generales */
 }
-.container {
-    background-color: rgba(215, 215, 215, 0.4);
-    margin: 50px;
-    padding: 20px;
-    border-radius: 10px;
-}
-.header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.header i {
-    font-size: 24px;
-    margin-right: 10px;
-}
-.header h1 {
-    font-size: 24px;
-    margin: 0;
-}
-.offers {
-    display: flex;
-    justify-content: space-between;
-}
-.offers-column {
-    width: 48%;
-}
-.offer-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.offer-item i {
-    font-size: 20px;
-    margin-right: 10px;
-}
-.offer-item .text {
-    flex-grow: 1;
-}
-.offer-item .text h2 {
-    font-size: 18px;
-    margin: 0;
-}
-.offer-item .text p {
-    font-size: 14px;
-    margin: 0;
-}
-.add-offer {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.add-offer i {
-    font-size: 20px;
-    margin-right: 10px;
-}
+
+/* Estilos para el modal (ventana emergente) */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posiciona el modal de forma fija en la pantalla */
+    z-index: 1; /* Asegura que el modal esté encima de otros elementos */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100%; /* Alto completo de la pantalla */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente negro */
 }
+
+/* Estilos para el contenido dentro del modal */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    padding: 20px; /* Espaciado interno */
+    margin: 10% auto; /* Centra el modal con un margen superior */
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
 }
-.modal-content input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+/* Estilos para los botones dentro del modal */
+.buttons {
+    display: flex; /* Usamos flexbox para alinear los botones */
+    justify-content: space-between; /* Los botones se distribuyen en los extremos */
 }
-.modal-content .buttons {
+
+/* Estilos comunes para los botones dentro del modal */
+.btn-close, .btn-cancel, .btn-confirm {
+    padding: 10px 15px; /* Espaciado interno de los botones */
+    cursor: pointer; /* Muestra el puntero al pasar sobre el botón */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón de confirmar */
+.btn-confirm {
+    background-color: #007bff; /* Color de fondo azul */
+}
+
+/* Estilos para el botón de cancelar */
+.btn-cancel {
+    background-color: #fd0000; /* Color de fondo rojo */
+}
+
+/* Estilos para el botón de cerrar */
+.btn-close {
+    background-color: #28a745; /* Color de fondo verde */
+}
+
+/* Estilos para las secciones de ofertas */
+.offers {
+    display: flex; /* Usa flexbox para alinear las columnas de ofertas */
+    flex-wrap: wrap; /* Alinea las columnas en filas */
+    gap: 10px; /* Espacio entre las columnas */
+    margin-bottom: 20px; /* Espacio inferior */
+/* Estilos para las columnas de ofertas */
+    justify-content: space-between; /* Distribuye el espacio entre las columnas */
+    justify-content: space-around; /* Distribuye el espacio entre las columnas */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+
+}
+
+/* Estilos para cada oferta individual */
+.offer-item {
+    display: flex; /* Usa flexbox para organizar los elementos dentro de la oferta */
+    border: 1px solid #ddd; /* Borde gris claro alrededor de la oferta */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f8f9fa; /* Fondo gris claro */
+    cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
+}
+
+/* Estilos para la imagen de cada oferta */
+.offer-item img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Alto de la imagen */
+    object-fit: cover; /* Hace que la imagen se ajuste al tamaño sin deformarse */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 5px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilos para el texto dentro de cada oferta */
+.text {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+/* Estilos para el contador de vistas */
+.views {
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color gris claro */
+}
+
+/* Estilos para el botón de agregar oferta */
+.btn-add {
+    background-color: #28a745; /* Color verde para el botón */
+    color: white; /* Texto en blanco */
+    padding: 10px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra el puntero al pasar sobre el botón */
+}
+
+/* Estilos para el botón de ver estadísticas */
+.btn-stats {
+    background-color: #007bff; /* Color azul para el botón */
+    color: white; /* Texto en blanco */
+    padding: 10px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra el puntero al pasar sobre el botón */
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Espacio arriba */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+/* Contenedor de los botones */
+.buttons-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribuye los botones de manera que estén a los extremos */
+    margin-bottom: 20px; /* Espacio entre los botones y otros elementos */
 }
-.modal-content .buttons button {
+
+/* Botones */
+.btn-add, .btn-stats {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-.modal-content .buttons .confirm {
-    background-color: #4CAF50;
-    color: white;
-}
-.modal-content .buttons .cancel {
-    background-color: #f44336;
-    color: white;
 }
