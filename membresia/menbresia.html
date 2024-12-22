@@ -6,7 +6,7 @@
     <title>Plan Premium de Carros</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="membresia.css">
-    <script src="membresia.js"></script>
+    <script src="membresia.js" defer></script>
   </head>
 
   <body>
@@ -21,47 +21,31 @@
         </div>
         <p class="text-sm text-gray-400" id="hora">4:30:00</p> <!-- Aquí se mostrará la hora -->
         <p class="text-sm text-gray-400" id="fecha">21/12/2024</p> <!-- Aquí se mostrará la fecha -->
-        
     </header>
 
-    <div class="container">
-      <!-- Columna 1: Plan Premium (Estilo 1) -->
-      <div class="column plan-container">
-        <div class="plan-header">
-          <h1>PREMIUM</h1>
-          <p>Disfruta de los mejores beneficios para tu carro con nuestro plan premium.</p>
-          <div class="price">
-            $2,700 por mes
-          </div>
-          <a class="button" href="#">Adquirir Premium</a>
-        </div>
-        <div class="plan-details">
-          <h2>Plan Premium</h2>
-          <div class="plan-item">
-            <img alt="Icono 1" height="40" src="https://storage.googleapis.com/a1aa/image/YSSNd3hXMPIbE9vJ5CeanXWEK3DQ11BH5moeCqrEjbPQLO9TA.jpg" width="40"/>
-            <div class="text">
-              <h3>Plan Premium</h3>
-              <p>Beneficios exclusivos para tu carro.</p>
-            </div>
-            <div class="price">$2,700</div>
-          </div>
-        </div>
+    <div class="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- Plan Premium (Columna 1) -->
+      <div class="plan-container border p-4 rounded shadow">
+        <h1 class="text-2xl font-bold">PREMIUM</h1>
+        <p>Disfruta de los mejores beneficios para tu carro con nuestro plan premium.</p>
+        <img alt="Image of a premium car" class="mx-auto my-4 w-full sm:w-auto" src="https://storage.googleapis.com/a1aa/image/SAHbGgQiICJQBtdPNeeI8t61TdhXxUfs42siOLnOerNrU40PB.jpg" width="300"/>
+        <div class="text-lg font-bold">$2,700 por mes</div>
+        <button id="btn-premium-1" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Adquirir Premium</button>
       </div>
 
-      <!-- Columna 2: Plan Premium (Estilo 2) -->
-      <div class="column plan-container">
-        <div class="text-center mb-6">
-            <h1 class="text-4xl font-bold" id="titulo">spy</h1>
-        </div>
-        <div class="text-center mb-6">
-            <h2 class="text-2xl font-bold">PREMIUM MEMBERSHIP</h2>
-            <p class="text-sm text-gray-400">Discover the benefits of our premium membership and enjoy exclusive features.</p>
-        </div>
-        <div class="text-center mb-6">
-            <img alt="Image of a premium car" class="mx-auto mb-4 w-full sm:w-auto" src="https://storage.googleapis.com/a1aa/image/SAHbGgQiICJQBtdPNeeI8t61TdhXxUfs42siOLnOerNrU40PB.jpg" width="300"/>
-            <p class="text-3xl font-bold">$2,700</p>
-        </div>
-        <a class="button" href="#">Adquirir Premium</a>
+      <!-- Plan Premium (Columna 2) -->
+      <div class="plan-container border p-4 rounded shadow">
+        <h2 class="text-2xl font-bold text-center">PREMIUM MEMBERSHIP</h2>
+      <img alt="Image of a premium car" class="mx-auto my-4 w-full sm:w-auto" src="https://storage.googleapis.com/a1aa/image/SAHbGgQiICJQBtdPNeeI8t61TdhXxUfs42siOLnOerNrU40PB.jpg" width="300"/>
+      <p class="text-sm text-gray-400 text-center">Discover the benefits of our premium membership and enjoy exclusive features.</p>
+      <div class="text-lg font-bold text-center">$2,700 por mes</div>
+      <p class="text-sm text-gray-400 text-center">$ 8,000 por año
+        <p class="text-3xl font-bold text-center">$2,700 quincenal </p>
+        <p class="text-3xl font-bold text-center">$2,700 semanal</p>
+        <p class="text-3xl font-bold text-center">$ 1,000 al dia </p>
+        
+        
+        <button id="btn-premium-2" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"> Comprar</button>
       </div>
     </div>
   </body>
