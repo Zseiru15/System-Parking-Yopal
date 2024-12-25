@@ -1,206 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Historial de Mejor Ofertas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('https://github.com/Zseiru15/System-Parking-Yopal/blob/Ordo%C3%B1ez/Bienvenida/fondo.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            color: #000;
-        }
-        .container {
-            background-color: rgba(215, 215, 215, 0.4);
-            margin: 50px;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .header i {
-            font-size: 24px;
-            margin-right: 10px;
-        }
-        .header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .offers {
-            display: flex;
-            justify-content: space-between;
-        }
-        .offers-column {
-            width: 48%;
-        }
-        .offer-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .offer-item i {
-            font-size: 20px;
-            margin-right: 10px;
-        }
-        .offer-item .text {
-            flex-grow: 1;
-        }
-        .offer-item .text h2 {
-            font-size: 18px;
-            margin: 0;
-        }
-        .offer-item .text p {
-            font-size: 14px;
-            margin: 0;
-        }
-        .add-offer {
-            display: flex;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .add-offer i {
-            font-size: 20px;
-            margin-right: 10px;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-        .modal-content input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .modal-content .buttons {
-            display: flex;
-            justify-content: space-between;
-        }
-        .modal-content .buttons button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .modal-content .buttons .confirm {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .modal-content .buttons .cancel {
-            background-color: #f44336;
-            color: white;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Mejores Ofertas</title>
+    <link rel="stylesheet" href="mejor oferta.css">
 </head>
 <body>
     <div class="container">
+        <!-- Header con logo -->
         <div class="header">
-            <i class="fas fa-arrow-left"></i>
-            <h1>Historial de Mejor Ofertas</h1>
+            <img alt="SPY Logo" height="60" src="C:\Users\mairo\OneDrive\Documents\proyecto del sena\Sin título.jpeg" width="60"/>
+            <h1>Historial de Mejores Ofertas</h1>
         </div>
+
+        <!-- Sección de ofertas -->
         <div class="offers">
             <div class="offers-column">
                 <h2>Ofertas Destacadas</h2>
-                <div class="offer-item" onclick="window.location.href='descuento.html'">
-                    <i class="fas fa-tag"></i>
+                <div class="offer-item" onclick="redirigirOferta('https://maps.google.com/?q=Parqueadero+Unicentro+Yopal')">
+                    <img src="C:\Users\mairo\OneDrive\Documents\proyecto del sena\a-well-lit-underground-parking-garage-filled-with--MUuc1yCVTCmphbwwOCUAYA--89RxuSuRH2MqZG-diyOOA.jpeg" alt="Oferta 1">
                     <div class="text">
                         <h2>Descuento de fin de mes</h2>
                         <p>20% de descuento</p>
-                    </div>
-                </div>
-                <div class="offer-item" onclick="window.location.href='descuento.html'">
-                    <i class="fas fa-tag"></i>
-                    <div class="text">
-                        <h2>Descuento de apertura</h2>
-                        <p>40% de descuento</p>
-                    </div>
-                </div>
-                <div class="offer-item" onclick="window.location.href='descuento.html'">
-                    <i class="fas fa-tag"></i>
-                    <div class="text">
-                        <h2>Oferta de Primavera</h2>
-                        <p>15% de descuento en junio</p>
+                        <p class="views">Visitas: 0</p>
                     </div>
                 </div>
             </div>
+
             <div class="offers-column">
-                <h2>Ofertas Reciente</h2>
-                <div class="offer-item" onclick="window.location.href='descuento.html'">
+                <h2>Ofertas Recientes</h2>
+                <div class="offer-item" onclick="redirigirOferta('https://maps.google.com/?q=Parqueadero+Unicentro+Yopal')">
+                    <img src="C:\Users\mairo\OneDrive\Documents\proyecto del sena\a-well-lit-underground-parking-garage-filled-with--MUuc1yCVTCmphbwwOCUAYA--89RxuSuRH2MqZG-diyOOA.jpeg" alt="Oferta 2">
                     <div class="text">
-                        <h2>Promo Semanal</h2>
-                        <p>10% de descuento cada semana</p>
+                        <h2>50% en la primera hora</h2>
+                        <p>Oferta limitada</p>
+                        <p class="views">Visitas: 0</p>
                     </div>
-                    <i class="fas fa-tag"></i>
-                </div>
-                <div class="offer-item" onclick="window.location.href='descuento.html'">
-                    <div class="text">
-                        <h2>Descuento Nocturno</h2>
-                        <p>33% de descuento después de las 6 pm</p>
-                    </div>
-                    <i class="fas fa-tag"></i>
-                </div>
-                <div class="offer-item" onclick="window.location.href='descuento.html'">
-                    <div class="text">
-                        <h2>Tarifa Especial Madrugadora</h2>
-                        <p>22% de descuento antes de las 6 am</p>
-                    </div>
-                    <i class="fas fa-tag"></i>
-                    
                 </div>
             </div>
         </div>
-        <div class="add-offer" onclick="document.getElementById('addOfferModal').style.display='block'">
-            <i class="fas fa-plus"></i>
-            <p>Agregar mas ofertas</p>
-        </div>
+
+    <!-- Contenedor para los botones -->
+<div class="buttons-container">
+    <!-- Botón para agregar ofertas -->
+    <div class="add-offer">
+        <button class="btn-add" onclick="mostrarModal('addOffer')">Agregar más ofertas</button>
     </div>
 
-    <div id="addOfferModal" class="modal">
+    <!-- Estadísticas del mes -->
+    <div class="monthly-stats">
+        <button class="btn-stats" onclick="mostrarModal('stats')">Ver estadísticas del mes</button>
+    </div>
+</div>
+
+    <!-- Modal para agregar ofertas -->
+    <div id="addOfferModal" class="modal" style="display: none;">
         <div class="modal-content">
             <h2>Agregar Oferta</h2>
-            <input type="text" placeholder="Nombre de la oferta">
-            <input type="text" placeholder="Descripcion de la oferta">
+            <input id="offer-name" type="text" placeholder="Nombre de la oferta">
+            <input id="offer-description" type="text" placeholder="Descripción de la oferta">
+            <input id="offer-image" type="file" accept="image/*">
             <div class="buttons">
-                <button class="confirm" onclick="confirmOffer()">Confirmar</button>
-                <button class="cancel" onclick="document.getElementById('addOfferModal').style.display='none'">Cancelar</button>
+                <button class="btn-confirm" onclick="confirmarOferta()">Confirmar</button>
+                <button class="btn-cancel" onclick="cerrarModal()">Cancelar</button>
             </div>
         </div>
     </div>
 
-    <script>
-        function confirmOffer() {
-            // Aquí puedes agregar la lógica para confirmar la oferta
-            document.getElementById('addOfferModal').style.display = 'none';
-        }
-    </script>
+    <!-- Modal para mostrar estadísticas -->
+    <div id="statsModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Estadísticas del Mes</h2>
+            <p><strong>Total de visitas este mes:</strong> <span id="total-monthly-views">0</span></p>
+            <p><strong>Visitas hoy:</strong> <span id="total-daily-views">0</span></p>
+            <p><strong>Fecha y Hora:</strong> <span id="current-datetime"></span></p>
+            <div class="buttons">
+                <button class="btn-close" onclick="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Versículo diario -->
+    <footer>
+        <p id="daily-verse"></p>
+    </footer>
+
+    <script src="mejor oferta.js"></script>
 </body>
 </html>

@@ -87,3 +87,76 @@ background-size: cover;
     border-radius: 5px;
     display: none;
 }
+
+/* Estilo base del pie de página */
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Contenido del pie de página */
+.footer {
+    background-color: #f1f1f1; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+.footer-container {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar elementos */
+}
+
+.contact-info {
+    margin-bottom: 20px; /* Espacio entre contacto y redes sociales */
+}
+
+.social-media {
+    display: flex; /* Usar flexbox para las redes sociales */
+    flex-direction: column; /* Colocar en columna */
+    align-items: center; /* Centrar elementos */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaciado entre íconos */
+    color: #333; /* Color de los íconos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Cambiar a fila en pantallas grandes */
+        justify-content: space-between; /* Espacio entre elementos */
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-container {
+        flex-direction: column; /* Mantener en columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinear elementos al principio */
+    }
+
+    .social-media {
+        margin-top: 20px; /* Añadir espacio entre la información y las redes sociales */
+    }
+}
+
+/* Estilos para animación */
+.footer {
+    animation: fade-in 2s; /* Animación de entrada */
+}
+.hidden {
+    display: none;
+}
+
+#detalleModal, #notificacion, #error {
+    z-index: 50;
+}
+
+button {
+    cursor: pointer;
+}
