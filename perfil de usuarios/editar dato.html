@@ -1,51 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Datos</title>
+    <!-- Importa Tailwind CSS desde CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="editor datos.css">
+    <!-- Vincula un archivo CSS adicional -->
+    <link rel="stylesheet" href="editar datos.css">
 </head>
 <body class="bg-gray-100">
+    <!-- Contenedor principal centrado -->
     <div class="max-w-lg mx-auto mt-10 bg-white shadow-lg rounded-lg">
+        <!-- Encabezado de la sección -->
         <div class="flex justify-between items-center bg-gray-800 text-white p-4 rounded-t-lg">
+            <!-- Título del encabezado -->
             <div class="flex-1 text-center">
                 <h2 class="text-lg font-semibold">Editar datos</h2>
             </div>
+            <!-- Icono de cerrar (sin funcionalidad por ahora) -->
             <i class="fas fa-times cursor-pointer"></i>
         </div>
+        <!-- Línea decorativa -->
         <div class="border-b-2 border-blue-500"></div>
+        <!-- Contenido principal -->
         <div class="p-4">
+            <!-- Título de la sección de datos -->
             <div class="mb-4">
                 <h3 class="text-lg font-semibold">Datos</h3>
             </div>
+            <!-- Contenedor para los campos de entrada -->
             <div class="space-y-4">
-                <div class="flex items-center">
-                    <input type="file" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Nombre de usuario" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Apellido de usuario" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Numero de identificacion" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Edad" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Genero" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Ciudad" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Estado civil" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
-                <div class="flex items-center">
-                    <input type="text" placeholder="Lugares de parqueadero" class="flex-1 border border-gray-300 rounded p-2">
-                </div>
+                <!-- Entradas de datos -->
+                <input type="file" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Nombre de usuario" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Apellido de usuario" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Numero de identificacion" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Edad" class="flex-1 border border-gray-300 rounded p-2">
+                
+                <input type="text" placeholder="Genero" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Ciudad" class="flex-1 border border-gray-300 rounded p-2">
+
+                <input type="text" placeholder="Estado civil" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Lugares de parqueadero" class="flex-1 border border-gray-300 rounded p-2">
+
             </div>
+            <!-- Sección de redes sociales -->
             <div class="mt-6">
                 <h3 class="text-lg font-semibold mb-2">Redes sociales</h3>
                 <div class="flex space-x-4">
@@ -54,31 +54,16 @@
                     <i class="fab fa-telegram text-4xl text-blue-500 cursor-pointer"></i>
                 </div>
             </div>
+            <!-- Botones de acción -->
             <div class="mt-6 flex justify-end space-x-4">
                 <button id="cancelButton" class="bg-gray-500 text-white px-4 py-2 rounded">Cancelar</button>
                 <button id="saveButton" class="bg-blue-500 text-white px-4 py-2 rounded">Guardar datos</button>
             </div>
+            <!-- Mensaje de estado -->
             <div id="message" class="mt-4 text-center"></div>
         </div>
     </div>
-
-    <script>
-        document.getElementById('saveButton').addEventListener('click', function() {
-            const messageDiv = document.getElementById('message');
-            if (navigator.onLine) {
-                messageDiv.textContent = 'Guardado con éxito';
-                messageDiv.className = 'text-green-500';
-            } else {
-                messageDiv.textContent = 'Error: No hay conexión a Internet';
-                messageDiv.className = 'text-red-500';
-            }
-        });
-
-        document.getElementById('cancelButton').addEventListener('click', function() {
-            // Add your cancel logic here
-            const messageDiv = document.getElementById('message');
-            messageDiv.textContent = '';
-        });
-    </script>
+    <!-- Vincula el archivo JavaScript -->
+    <script src="editar.js"></script>
 </body>
 </html>
