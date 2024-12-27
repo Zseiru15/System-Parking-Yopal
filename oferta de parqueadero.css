@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Estilo general */
+
+
+/* Contenedor principal */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Encabezado */
+.header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.header .logo {
+margin-bottom: 10px;
+}
+
+.header h1 {
+font-size: 2.5rem;
+color: #007BFF;
+}
+
+/* Sección de promociones */
+.promo {
+text-align: center;
+background-color: #e0f7fa;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+}
+
+/* Ofertas */
+.offers {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.offer {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(255, 255, 255, 0.938);
+overflow: hidden;
+width: 300px;
+text-align: center;
+}
+
+.offer img {
+width: 100%;
+height: auto;
+}
+
+.offer .content {
+padding: 15px;
+}
+
+.offer h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.button {
+background-color: #007BFF;
+color: #fff;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 4px;
+font-size: 1rem;
+}
+
+.button:hover {
+background-color: #0056b3;
+}
+
+/* Espacios disponibles */
+.spaces, .payments {
+margin-top: 20px;
+background-color: #fff;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(255, 252, 252, 0.993);
+}
+
+.spaces .space, .payments .payment {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+.spaces .space span, .payments .payment span {
+font-size: 1rem;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+.offers {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+.payment-details {
+text-align: center;
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin: 20px auto;
+max-width: 600px;
+}
+.payment-details h2 {
+margin-bottom: 20px;
+}
+
+.offers-row {
+display: flex;
+overflow-x: auto;
+gap: 10px;
+}
+
+.offers, .limited-offers-carousel {
+flex: 0 0 auto;
+margin: 10px;
+}
+
+.offer, .limited-offer {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(255, 255, 255, 0.938);
+overflow: hidden;
+width: 300px;
+text-align: center;
+}
+
+.limited-offers-carousel {
+position: relative;
+width: 100%;
+overflow: hidden;
+margin: 20px 0;
+}
+
+
+
+.limited-offer {
+background: #f9f9f9;
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 10px;
+text-align: center;
+min-width: 300px;
+}
+
+.carusel    {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 200px;
+}
