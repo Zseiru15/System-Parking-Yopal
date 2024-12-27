@@ -7,8 +7,9 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen al fondo de la página */
-    background-image: url('file:///C:/Users/mairo/OneDrive/Documents/proyecto%20del%20sena/a-captivating-movie-poster-featuring-a-busy-parkin-60j2DELRRa6GHYyZBCd_Qg-psZPuR4mTCa_ZSGRmiZedA.jpeg'); 
-    }
+    background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
+    background-size: cover;
+}
 
 .p-8 {
     padding: 2rem; /* padding para el contenedor */
