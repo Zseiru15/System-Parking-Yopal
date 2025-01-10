@@ -180,6 +180,7 @@ body {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas nuevas en pantallas pequeñas */
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
@@ -189,7 +190,8 @@ body {
 
 .contact-info, .social-media {
     flex: 1;
-    margin: 0 10px;
+    margin: 10px; /* Añade margen alrededor de cada sección */
+    min-width: 250px; /* Asegura un ancho mínimo para cada sección */
 }
 
 .social-icons {
@@ -207,10 +209,11 @@ body {
     color: #007bff;
 }
 
-/* Media Queries */
-@media screen and (max-width: 1200px) {
-    .welcome-title {
-        font-size: 4rem; /* Ajusta el tamaño del título */
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center;
     }
 }
 
