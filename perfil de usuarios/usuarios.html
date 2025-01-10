@@ -1,147 +1,115 @@
-<html>
-<head> <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
-    background-size: cover;
-        background-position: center;
-    }
-</style>
-<script src="https://cdn.tailwindcss.com"> </script> <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<script>
-  // Ejemplo de JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('La página ha sido cargada completamente.');
-});
-</script>
-</head><body class="bg-gray-200 font-roboto"> <div class="relative max-w-screen-lg mx-auto p-4 bg-white shadow-lg rounded-lg"><div class="flex justify-between items-center">
-    <div class="flex items-center space-x-4">
-    <div class="relative">
-    <img alt="Profile picture of a smiling woman" class="w-24 h-24 rounded-full border-4 border-white shadow-lg" height="100" src="https://storage.googleapis.com/a1aa/image/LKh9tJ1QRV4RBpdil8Qhl88ObEQvlYBrZszknVs8UfSeuovTA.jpg" width="100"/>
-    </div><div><h2 class="text-pink-500 text-2xl font-bold">
-    rolena Rincon
-    </h2><div class="flex items-center space-x-2">
-    <div class="flex items-center space-x-1">
-        <i class="fas fa-user text-yellow-500">
-        </i>
-        <span>27</span></div>
-    <div class="flex items-center space-x-1">
-    <i class="fas fa-venus text-yellow-500"></i><span>
-    Mujer
-        </span></div><div class="flex items-center space-x-1">
-        <i class="fas fa-map-marker-alt text-yellow-500">
-        </i><span>Yopal</span>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="usuario.css">
+</head>
+<body class="bg-gray-200 font-roboto">
+    <div class="relative max-w-screen-lg mx-auto p-4 bg-white shadow-lg rounded-lg">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <img alt="Foto de perfil" class="w-24 h-24 rounded-full border-4 border-white shadow-lg" height="100" src="https://storage.googleapis.com/a1aa/image/LKh9tJ1QRV4RBpdil8Qhl88ObEQvlYBrZszknVs8UfSeuovTA.jpg" width="100"/>
+                </div>
+                <div>
+                    <h2 class="text-pink-500 text-2xl font-bold">Rolena Rincon</h2>
+                    <div class="flex items-center space-x-2">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-user text-yellow-500"></i>
+                            <span>27</span>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-venus text-yellow-500"></i>
+                            <span>Mujer</span>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-map-marker-alt text-yellow-500"></i>
+                            <span>Yopal</span>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-heart text-yellow-500"></i>
+                            <span>Soltera</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <!-- Enlaces a redes sociales -->
+                <a class="text-blue-500" href="https://telegram.org" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+                <a class="text-blue-700" href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a class="text-green-500" href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-bold">Lugares De Parqueaderos</h3>
+                <ul class="list-disc list-inside">
+                    <li>Parqueadero La Esperanza</li>
+                    <li>Parqueadero El Progreso</li>
+                    <li>Parqueadero San Martín</li>
+                    <li>Parqueadero La Estación</li>
+                    <li>Parqueadero El Triunfo</li>
+                    <li>Parqueadero Los Llanos</li>
+                </ul>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-bold">Calificación</h3>
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2">
+                        <span>Seguridad privacidad</span>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-gray-300"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span>Servicio Del Parqueadero</span>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-gray-300"></i>
+                            <i class="fas fa-star text-gray-300"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span>Atención Al Cliente</span>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <h3 class="text-lg font-bold">Recomendaciones</h3>
+            <p>
+                Al elegir un parqueadero, es importante considerar la ubicación, la seguridad y los servicios adicionales que ofrece. También es útil verificar las tarifas y los horarios.
+            </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <h3 class="text-lg font-bold">Mis Vehículos</h3>
+            <ul class="list-disc list-inside">
+                <li>Automóvil Marca: Toyota Corolla 2020 Placa: ABC-123</li>
+                <li>Motocicleta Yamaha XT2150 2022 Placa: ABC-12A</li>
+                <li>Bicicleta Marca GT Avalanche 2022 Código de modelo: G27301M</li>
+            </ul>
+        </div>
+        <div class="flex justify-between mt-4">
+            <button class="bg-gray-800 text-white px-4 py-2 rounded-lg" onclick="location.href='registro_vehiculo.html'">Registro de Vehículo</button>
+            <button class="bg-gray-800 text-white px-4 py-2 rounded-lg" onclick="location.href='editar_perfil.html'">Editar Perfil</button>
+        </div>
     </div>
-    <div class="flex items-center space-x-1">
-        <i class="fas fa-heart text-yellow-500">
-        </i>
-        <span>
-        Soltera
-        </span></div></div></div></div>
-    <div class="flex space-x-2"><a class="text-blue-500" href="#"><i class="fab fa-telegram fa-2x"></i></a>
-    <a class="text-blue-700" href="#">
-<i class="fab fa-facebook fa-2x"></i></a><a class="text-green-500" href="#"><i class="fab fa-whatsapp fa-2x">
-</i></a></div></div><div class="grid grid-cols-2 gap-4 mt-4"><div class="bg-white p-4 rounded-lg shadow-md">
-<h3 class="text-lg font-bold">lugares De parqueaderos</h3><ul class="list-disc list-inside">
-<li>
-Parqueadero La Esperanza</li><li>Parqueadero El Progreso</li><li>Parqueadero San Martín</li><li>
-    Parqueadero La Estación
-    </li> <li>
-    Parqueadero El Triunfo
-    </li> <li>
-    Parqueadero Los Llanos
-    </li>
-    </ul>
-    </div>
-    <div class="bg-white p-4 rounded-lg shadow-md">
-    <h3 class="text-lg font-bold">
-    Calificación
-    </h3>
-    <div class="space-y-2">
-    <div class="flex items-center space-x-2">
-    <span>
-        Seguridad privacidad
-    </span>
-    <div class="flex space-x-1">
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-gray-300">
-        </i>
-    </div>
-    </div>
-    <div class="flex items-center space-x-2">
-    <span>
-        Sericio Del Parqueadero
-    </span>
-    <div class="flex space-x-1">
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-gray-300">
-        </i>
-        <i class="fas fa-star text-gray-300">
-        </i>
-    </div>
-    </div>
-    <div class="flex items-center space-x-2">
-    <span>
-        Atencion Al Cliente
-    </span>
-    <div class="flex space-x-1">
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-yellow-500">
-        </i>
-        <i class="fas fa-star text-gray-300">
-        </i>
-    </div>
-    </div>
-    </div>
-    </div>
-</div>
-<div class="bg-white p-4 rounded-lg shadow-md mt-4">
-    <h3 class="text-lg font-bold">
-    Recomendaciones
-    </h3>
-    <p>
-    Al elegir un parqueadero, es importante considerar la ubicación, la seguridad y los servicios adicionales que ofrece. También es útil verificar las tarifas y los horarios
-    </p> </div>
-<div class="bg-white p-4 rounded-lg shadow-md mt-4">
-    <h3 class="text-lg font-bold">
-    Mis Vehiculos
-    </h3>
-    <ul class="list-disc list-inside">
-    <li>
-    Automovil Marca: Toyota Corolla 2020 Placa: ABC-123
-    </li>
-    <li>
-    Motocicleta Yamaha XT2150 2022 ABC-12A
-    </li>
-    <li>
-    Bicicleta Marca GT Avalanche 2022 Codigo de modelo: G27301M
-    </li>
-    </ul> </div>
-<div class="flex justify-between mt-4">
-    <button class="bg-gray-800 text-white px-4 py-2 rounded-lg">
-    Registro de vehiculo
-    </button>
-    <button class="bg-gray-800 text-white px-4 py-2 rounded-lg">
-    Editar Perfil
-    </button>
-</div>
-</div> </body>
+    <script src="Usuario.js"></script>
+</body>
 </html>

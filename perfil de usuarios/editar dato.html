@@ -33,7 +33,14 @@
             <!-- Contenedor para los campos de entrada -->
             <div class="space-y-4">
                 <!-- Entradas de datos -->
-                
+                <h1 class="text-foto">Seleccionar imagen de perfil </h1>
+<form action="/ruta-del-servidor" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="agregar" value="foto">
+    <input type="file" name="foto" accept="image/*">
+    <button type="submit">Subir</button>
+</form>
+
+<h1 class="text-foto">Seleccionar imagen de carro </h1>
                 <input type="file" class="flex-1 border border-gray-300 rounded p-2">
                 <input type="text" placeholder="Contraseña" class="flex-1 border border-gray-300 rounded p-2">
                 <input type="text" placeholder="Correo electrónico" class="flex-1 border border-gray-300 rounded p-2">
