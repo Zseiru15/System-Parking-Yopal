@@ -3,25 +3,26 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f0f0f0;
+        background-color: #f5f3f3;
         background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
         background-size: cover;
         background-position: center;
     }
-    /* Estilo general */
-
 
 /* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 0 10px rgb(255, 253, 253);
+    background-blend-mode: overlay;
 }
 
 /* Encabezado */
 .header {
     text-align: center;
     margin-bottom: 20px;
+    background-color: #f5f3f3;
 }
 
 .header .logo {
@@ -189,4 +190,18 @@
 
 .carousel-btn.next {
     right: 10px;
+}
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 10;
+    width: 10%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    z-index: 100;
+    display: flex;
+    
 }
