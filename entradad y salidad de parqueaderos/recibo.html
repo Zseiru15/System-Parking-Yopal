@@ -3,76 +3,8 @@
 <title>
 Bauncher de pago
 </title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-<style>
-body {
-            background-color: #7B3F3F;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: white;
-            width: 300px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .logo img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-        .details {
-            text-align: left;
-            margin-top: 10px;
-        }
-        .details p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        .details .bold {
-            font-weight: bold;
-        }
-        .barcode {
-            margin: 20px 0;
-        }
-        .barcode img {
-            width: 100%;
-        }
-        .footer {
-            font-size: 12px;
-            text-align: center;
-        }
-        .footer p {
-            margin: 5px 0;
-        }
-        .footer .bold {
-            font-weight: bold;
-        }
-        .footer .regulation {
-            font-size: 10px;
-            text-align: justify;
-        }
-        .success-message {
-            color: green;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .print-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="recibo.css">
 <script>
     function actualizarRecibo() {
         const placa = document.getElementById('placa').value;
@@ -84,6 +16,7 @@ body {
         document.getElementById('recibo-entrada').textContent = `Entrada: ${entrada}`;
         document.getElementById('recibo-salida').textContent = `Salida: ${salida}`;
         document.getElementById('recibo-cajero').textContent = `Cajero: ${cajero}`;
+        document.getElementById('recibo-observaciones ').textContent = `observaciones:${observaciones}`;
     }
 
     function printReceipt() {
@@ -95,15 +28,8 @@ body {
 </head>
 <body>
 <div class="container">
-    <form onsubmit="actualizarRecibo(); return false;">
-        <input type="text" id="placa" placeholder="Placa" required />
-        <input type="text" id="entrada" placeholder="Hora de Entrada" required />
-        <input type="text" id="salida" placeholder="Hora de Salida" required />
-        <input type="text" id="cajero" placeholder="Cajero" required />
-        <button type="submit">Generar Recibo</button>
-    </form>
     <div class="logo">
-        <img alt="Logo with text 'SPY' and a car illustration" height="100" src="https://storage.googleapis.com/a1aa/image/FjW18vjSQx6EJt8XeavUgA7dJaS2Iht4pNDjdvAap9ePzFxTA.jpg" width="100"/>
+        <img alt="Logo with text 'SPY' and a car illustration" height="100" src=" C:\Users\mairo\OneDrive\Documents\proyecto del sena\Sin título.jpeg " width="100"/>
     </div>
     <div class="details">
         <p>NIT: 12345678-9</p>

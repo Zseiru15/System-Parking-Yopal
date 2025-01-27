@@ -11,27 +11,35 @@
     <!-- Enlaces a archivos CSS y fuentes -->
     <link rel="stylesheet" href="editar datos.css"> <!-- Vincula el archivo CSS para los estilos de la página -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Vincula un archivo CSS adicional -->
+    <link rel="stylesheet" href="editar datos.css">
 </head>
 
 <body class="bg-gray-100">
 <!-- Contenido principal -->
 <main class="main-content">
     <div class="max-w-lg mx-auto mt-10 bg-white shadow-lg rounded-lg">
+        <!-- Encabezado de la sección -->
         <div class="flex justify-between items-center bg-gray-800 text-white p-4 rounded-t-lg">
+            <!-- Título del encabezado -->
             <div class="flex-1 text-center">
                 <h2 class="text-lg font-semibold">Editar datos</h2>
             </div>
+            <!-- Icono de cerrar (sin funcionalidad por ahora) -->
             <i class="fas fa-times cursor-pointer"></i>
         </div>
+        <!-- Línea decorativa -->
         <div class="border-b-2 border-blue-500"></div>
+        <!-- Contenido principal -->
         <div class="p-4">
+            <!-- Título de la sección de datos -->
             <div class="mb-4">
                 <h3 class="text-lg font-semibold">Datos</h3>
             </div>
+            <!-- Contenedor para los campos de entrada -->
             <div class="space-y-4">
                 <div class="flex items-center">
-                    <input type="file" class="flex-1 border border-gray-300 rounded p-2">
+                    <input type="file" placeholder="Foto" class="flex-1 border border-gray-300 rounded p-2">
                 </div>
                 <div class="flex items-center">
                     <input type="text" placeholder="Nombre de usuario"
@@ -62,18 +70,26 @@
                         class="flex-1 border border-gray-300 rounded p-2">
                 </div>
             </div>
+            <!-- Sección de redes sociales -->
             <div class="mt-6">
                 <h3 class="text-lg font-semibold mb-2">Redes sociales</h3>
-                <div class="flex space-x-4">
-                    <i class="fab fa-whatsapp text-4xl text-green-500 cursor-pointer"></i>
-                    <i class="fab fa-facebook text-4xl text-blue-700 cursor-pointer"></i>
-                    <i class="fab fa-telegram text-4xl text-blue-500 cursor-pointer"></i>
-                </div>
+
+                <input type="text" placeholder="Facebook" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Instagram" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Whatsapp" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="LinkedIn" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="GitHub" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Youtube" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Pinterest" class="flex-1 border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Twitter" class="flex-1 border border-gray-300 rounded p-2">
+
             </div>
+            <!-- Botones de acción -->
             <div class="mt-6 flex justify-end space-x-4">
                 <button id="cancelButton" class="bg-gray-500 text-white px-4 py-2 rounded">Cancelar</button>
                 <button id="saveButton" class="bg-blue-500 text-white px-4 py-2 rounded">Guardar datos</button>
             </div>
+            <!-- Mensaje de estado -->
             <div id="message" class="mt-4 text-center"></div>
         </div>
     </div>

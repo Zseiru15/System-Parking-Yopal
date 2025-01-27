@@ -2,168 +2,100 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    background-image: url('C:/Users/mairo/OneDrive/Documents/proyecto del sena/Firefly parqueaderos spy 18698.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('file:///C:/Users/mairo/OneDrive/Documents/proyecto%20del%20sena/a-well-lit-underground-parking-garage-filled-with--MUuc1yCVTCmphbwwOCUAYA--89RxuSuRH2MqZG-diyOOA.jpeg');
 }
+
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
+    color: #fff;
+    padding: 10px 20px;
 }
-.header img {
-    height: 50px;
-    vertical-align: middle;
-}
-.header nav {
-    display: inline-block;
-    margin-left: 20px;
-}
+
 .header nav a {
-    color: white;
-    text-decoration: none;
+    color: #fff;
     margin: 0 10px;
-    font-size: 14px;
+    text-decoration: none;
 }
-.header .menu-icon {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 24px;
-}
+
 .content {
     padding: 20px;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-.content h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.form-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-bottom: 20px;
-}
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.form-container input, .form-container select, .form-container textarea {
-    width: 100%;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-.form-container button {
-    background-color: #ffcc00;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.form-container button:hover {
-    background-color: #e6b800;
-}
-.table-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    margin-bottom: 20px;
-    overflow-x: auto;
-}
-.table-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.table-container table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.table-container th, .table-container td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-}
-.table-container th {
-    background-color: #f2f2f2;
-}
-.table-container .print-button {
-    margin-top: 10px;
-    background-color: #ffcc00;
-    border: none;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.table-container .print-button:hover {
-    background-color: #e6b800;
-}
-.sidebar {
-    background-color: rgba(215, 215, 215, 0.5);
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-top: 20px;
-}
-.sidebar img {
-    width: 100%;
-    border-radius: 5px;
-}
-.sidebar .info {
-    margin-top: 10px;
-}
-.sidebar .info div {
-    margin-bottom: 5px;
-}
-.sidebar .observations {
-    margin-top: 20px;
-}
-.sidebar .observations table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.sidebar .observations th, .sidebar .observations td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-}
-.sidebar .observations th {
-    background-color: #f2f2f2;
-}
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-.footer .social-icons a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 20px;
-}
+
 .form-observations-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.form-container,
+.sidebar {
+    flex: 1 1 calc(50% - 10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 5px;
+    background: #f9f9f9;
+}
+
+.table-container {
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #fff;
+}
+
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+textarea {
+    width: 100%;
+}
+
+.print-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .form-container,
+    .sidebar {
+        flex: 1 1 100%;
+    }
 }
